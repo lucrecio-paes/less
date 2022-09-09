@@ -1,0 +1,24 @@
+@blue : blue; //variavel
+
+ 
+
+.drop-shadow(@color : yellow){
+    color: @color;
+    text-shadow: 2px 1px 1px #ccc;
+}
+
+
+h1 {
+    .drop-shadow(green);
+}
+
+p {
+    color: @blue
+}
+
+//hierarquia
+p{
+    b{
+        color: red
+    }
+}
